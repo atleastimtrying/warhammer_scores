@@ -45,4 +45,4 @@ jobs:
           yarn install --pure-lockfile
 
       - name: Run tests
-        run: rake
+        run: bundle exec rake
