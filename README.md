@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This rails app is intended to provide a scoring sheet for people playing warhammer 40k. It's also a chance to me to play with some concepts around work in my spare time!
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+- clone the repo
+- `bundle install`
+- `rake`
 
-* System dependencies
+## Tests
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This app currently uses minitest and cucumber to run integration and unit tests. these both run using `rake`. they can also be run individually using the standard commands `rails cucumber` and `rails test`.
