@@ -46,6 +46,7 @@ end
 
 group :test do
   gem 'cucumber-rails', require: false
+  gem 'launchy'
   gem 'database_cleaner'
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 3.26'
