@@ -43,6 +43,7 @@ jobs:
       - name: Install packages
         run: |
           yarn install --pure-lockfile
-
+      - name: precompile packs
+        run: NODE_ENV=test bundle exec rails webpacker:compile
       - name: Run tests
         run: bundle exec rake
