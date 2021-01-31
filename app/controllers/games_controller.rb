@@ -1,8 +1,9 @@
+# frozen_string_literal: true
+
 class GamesController < ApplicationController
-  def index
-  end
+  def index; end
 
   def new
-    @today = Date.today
+    @today = Time.zone.today
   end
 end
