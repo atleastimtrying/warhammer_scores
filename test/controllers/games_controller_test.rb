@@ -1,12 +1,14 @@
-require "test_helper"
+# frozen_string_literal: true
+
+require 'test_helper'
 
 class GamesControllerTest < ActionDispatch::IntegrationTest
-  test "index is rendered from root" do 
+  test 'index is rendered from root' do
     get root_path
     assert_equal 200, status
   end
-  
-  test "new renders a form" do
+
+  test 'new renders a form' do
     get new_game_path
     assert_equal 200, status
   end
@@ -14,6 +16,6 @@ class GamesControllerTest < ActionDispatch::IntegrationTest
   test "new renders today's date" do
     get new_game_path
 
-    assert_match Date.today.to_s, @response.body
+    assert_match Time.zone.today.to_s, @response.body
   end
 end

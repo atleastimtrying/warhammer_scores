@@ -1,0 +1,8 @@
+require: rubocop-rails
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+    - 'lib/tasks/*.rake'
+    - 'config/environments/*.rb'
+    - 'bin/**/*'
